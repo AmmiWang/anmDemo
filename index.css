@@ -1,0 +1,98 @@
+p{
+  padding: 0;
+  margin: 0;
+}
+body{
+  margin: 0;
+}
+.page{
+  display: flex;
+}
+.list{
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+.list div{
+  width: calc(50% - 20px);
+  height: 80px;
+  position: absolute;
+  transition: all 1000ms;
+  margin: 10px;
+  background-color: red;
+}
+.list div:nth-child(1){
+  background-color: red;
+}
+.list div:nth-child(2){
+  background-color: blue;
+}
+.list div:nth-child(3){
+  background-color: green;
+}
+.list div:nth-child(4){
+  background-color: yellow;
+}
+.list div:nth-child(5){
+  background-color: black;
+}
+.list div:nth-child(6){
+  background-color: gray;
+}
+.list div:nth-child(7){
+  background-color: orange;
+}
+.list div:nth-child(8){
+  background-color: antiquewhite;
+}
+.list div:nth-child(9){
+  background-color: aqua;
+}
+.list div:nth-child(10){
+  background-color: pink;
+}
+.main{
+  width: 1000px;
+  height: 680px;
+  background-color: pink;
+  margin-left: 50px;
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.main-item{
+  position: absolute;
+  bottom: -100px;
+  animation: toTop 3s;
+  animation-timing-function: linear;
+  padding-bottom: 48px;
+}
+@keyframes toTop {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: calc(100% + 100px);
+  }
+}
+.main-item-top{
+  background-color: red;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.main-item-bottom{
+  width: 120%;
+  padding: 0 10px;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  text-align: center;
+  height: 48px;
+}
